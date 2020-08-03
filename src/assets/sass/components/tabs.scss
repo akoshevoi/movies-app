@@ -1,0 +1,52 @@
+.tabs {
+  width: 500px;
+  
+  background-color: $white;
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 600px
+*/
+@media(max-width: 600px) {
+  .tabs {
+    width: 400px;
+  }
+
+  .tabs .MuiTab-root {
+    min-width: 130px;
+  }
+
+  .tabs .MuiTab-wrapper {
+    font-size: 10px;
+  }
+}
+
+/*
+ * Max-width: 500px
+*/
+@media(max-width: 500px) {
+  .tabs {
+    width: 300px;
+  }
+
+  .tabs .MuiTab-root {
+    min-width: 100px;
+  }
+}
+
+/*
+ * Max-width: 300px
+*/
+@media(max-width: 300px) {
+  .tabs {
+    width: 250px;
+  }
+
+  .tabs .MuiTab-root {
+    min-width: 50px;
+  }
+}

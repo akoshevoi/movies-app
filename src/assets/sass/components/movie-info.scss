@@ -1,0 +1,293 @@
+.movie-info {
+	color: $black;
+
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+  box-shadow: 0 4px 10px $black-shadow;
+  
+  &--preview {
+    margin: 100px auto;
+  }
+}
+
+.movie-info__background {
+	background-color: $white-bg-transparent;
+}
+
+.movie-info__inner {
+  display: flex;
+  
+  &--explicit {
+    min-height: 100vh;
+	  padding: 100px 0; 
+  }
+}
+
+.movie-info__img {
+	border-radius: 30px;
+  box-shadow: 0 4px 10px $black-shadow;
+  
+  &--preview {
+    width: 300px;
+  
+    transform: scale(1.2);
+  }
+}
+
+.movie-info__content {
+	display: flex;
+	flex-direction: column;
+  padding: 15px 20px;
+  
+  &--preview {
+    padding: 15px 10px 15px 50px;
+  }
+}
+
+.movie-info__title--explicit {
+	font-size: 23px;
+}
+
+.movie-info__genre--explicit {
+	font-size: 18px;
+}
+
+.movie-info__year {
+	margin: 0 8px;
+
+	font-weight: 500;
+}
+
+.movie-info__runtime {
+  margin: 0 15px;
+  
+	font-weight: 400;
+}
+
+.movie-info__runtime:before {
+	content: '';
+	display: inline-block;
+	margin-right: 15px;
+	width: 12px;
+	height: 12px;
+
+	background-color: $blue;
+	border-radius: 50%;
+}
+
+.movie-info__subheader--explicit {
+	font-size: 16px;
+}
+
+.movie-info__overview {
+	font-size: 18px;
+  line-height: 1.8;
+  
+  &--explicit {
+		font-size: 20px;
+    margin-bottom: 36px;
+  }
+}
+
+.movie-info__definition {
+	font-weight: 600;
+}
+
+.movie-info__meaning {
+	margin: 10px;
+}
+
+.movie-info__filmmakers {
+	display: flex;
+	flex-wrap: wrap;
+
+	font-size: 16px;
+}
+
+.movie-info__filmmaker {
+	width: 25%;
+	margin-bottom: 25px;
+	padding: 0 20px;
+}
+
+.movie-info__filmmaker:nth-child(4n + 1) {
+	padding-left: 0;
+}
+
+.movie-info__name {
+	margin: 0;
+}
+
+.movie-info__job {
+	margin: 0;
+
+	font-weight: 600;
+}
+
+.movie-info__button-group {
+	margin-top: auto;
+}
+
+.movie-info__button {
+	margin: 10px 15px;
+  padding: 10px 15px;
+
+  font-family: inherit;
+  font-size: 16px;
+  color: $white;
+
+	background-color: $blue;
+	border: none;
+	border-radius: 20px;
+  cursor: pointer;
+	outline: none;
+	
+	transition: background .2s ease-out, opacity .5s ease-out; 
+	
+	&--explicit {
+		align-self: center;
+	}
+}
+
+.movie-info__button:hover {
+  background-color: $blue-light;
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 1200px
+*/
+@media(max-width: 1200px) {
+	.movie-info__overview--explicit {
+		font-size: 18px;
+	}
+}
+
+/*
+ * Max-width: 1100px
+*/
+@media(max-width: 1100px) {
+	.movie-info__img--preview {
+		transform: scale(1.1);
+	}
+
+	.movie-info__overview {
+		font-size: 16px;
+	}
+
+	.movie-info__img--explicit {
+		width: 400px;
+	}
+}
+
+/*
+ * Max-width: 1000px
+*/
+@media(max-width: 1000px) {
+	.movie-info__title--explicit {
+    font-size: 20px;
+	}
+
+	.movie-info__genre--explicit {
+    font-size: 16px;
+	}
+
+	.movie-info__inner--explicit {
+		flex-wrap: wrap;
+	}
+
+	.movie-info__poster--explicit {
+		width: 100%;
+	}
+
+	.movie-info__img--explicit {
+		margin: 0 auto;
+	}
+
+	.movie-info__content {
+		width: 100%;
+	}
+}
+
+/*
+ * Max-width: 900px
+*/
+@media(max-width: 900px) {
+	.movie-info__poster--preview {
+		display: flex;
+    flex-direction: column;
+    justify-content: center;
+	}
+
+	.movie-info__img--preview {
+		transform: scale(1);
+	}
+
+	.movie-info__content--preview {
+		padding: 15px;
+	}
+}
+
+/*
+ * Max-width: 700px
+*/
+@media(max-width: 700px) {
+	.movie-info__inner--preview {
+		flex-wrap: wrap;
+	}
+
+	.movie-info__poster--preview {
+		width: 100%;
+		margin: 20px auto;	
+		flex-direction: row;
+	}
+}
+
+/*
+ * Max-width: 500px
+*/
+@media(max-width: 500px) {
+	.movie-info__img--explicit {
+		width: 300px;
+	}
+
+	.movie-info__filmmaker {
+		width: 100%;
+		padding-left: 0;
+	}
+
+	.movie-info__filmmaker:nth-child(4n + 1) {
+		padding-left: 0;
+	}
+}
+
+/*
+ * Max-width: 300px
+*/
+@media(max-width: 300px) {
+	.movie-info__img--preview, 
+	.movie-info__img--explicit {
+		width: 200px;
+	}
+
+	.movie-info__title {
+		font-size: 18px;
+	}
+
+	.movie-info__genre {
+		font-size: 16px;
+	}
+
+	.movie-info__overview {
+    font-size: 14px;
+	}
+
+	.movie-info__runtime,
+	.movie-info__meaning {
+		display: inline-block;
+	}
+}

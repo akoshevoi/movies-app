@@ -1,0 +1,64 @@
+.modal {
+  cursor: pointer;
+}
+
+.modal__button {
+  margin: 0 15px;
+}
+
+.modal__button .header__svg--enter {
+  transition: fill .2s ease-out;
+}
+
+.modal:hover .modal__button .header__svg--enter {
+  fill: $blue-light;
+}
+
+.modal__content {
+  width: 500px;
+
+  color: $black;
+
+  background-color: $white;
+  outline: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 600px
+*/
+@media(max-width: 600px) {
+  .modal__content {
+    width: 400px;
+  }
+}
+
+/*
+ * Max-width: 500px
+*/
+@media(max-width: 500px) {
+  .modal__content {
+    width: 300px;
+  }
+}
+
+/*
+ * Max-width: 300px
+*/
+@media(max-width: 300px) {
+  .modal__content {
+    width: 250px;
+  }
+}
+
+
+

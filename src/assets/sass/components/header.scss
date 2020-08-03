@@ -1,0 +1,207 @@
+.header {
+  padding: 15px 0;
+
+  background-color: $blue;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__svg {
+  margin: 0 15px;
+
+  fill: $white;
+  cursor: pointer;
+
+  transition: fill .2s ease-out;
+
+  &--clapperboard {
+    width: 60px;
+  }
+
+  &--user {
+    width: 40px;
+  }
+
+  &--database,
+  &--homepage,
+  &--enter, 
+  &--exit {
+    width: 40px;
+    height: 64px;
+  }
+}
+
+.header__badge {
+  margin: 0 15px;
+  
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+}
+
+.header__welcome {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.header__username {
+  margin: 5px;
+}
+
+.header__greeting {
+  font-weight: 600;
+}
+
+.header__sign-out-button {
+  align-self: center;
+}
+
+.header__svg--exit  {
+  transition: fill .2s ease-out;
+}
+
+.header__svg--homepage:hover, 
+.header__svg--database:hover, 
+.header__svg--exit:hover, 
+.header__svg--user:hover {
+  fill: $blue-light;
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 1200px
+*/
+@media(max-width: 1200px) {
+  .header__svg {
+    &--clapperboard {
+      width: 50px;
+    }
+  
+    &--user {
+      width: 35px;
+    }
+  
+    &--database,
+    &--homepage,
+    &--enter, 
+    &--exit {
+      width: 35px;
+    }
+  }
+}
+
+/*
+ * Max-width: 900px
+*/
+@media(max-width: 900px) {
+  .header__badge {
+    margin: 0 5px;
+
+    font-size: 20px;
+  }
+}
+
+/*
+ * Max-width: 800px
+*/
+@media(max-width: 800px) {
+  .header__welcome {
+    display: none;
+  }
+}
+
+/*
+ * Max-width: 700px
+*/
+@media(max-width: 700px) {
+  .header__badge {
+    margin: 0 5px;
+
+    font-size: 20px;
+  }
+
+  .header__svg {
+    &--clapperboard {
+      width: 40px;
+    }
+  
+    &--user {
+      width: 30px;
+    }
+  
+    &--database,
+    &--homepage,
+    &--enter, 
+    &--exit {
+      width: 30px;
+    }
+  }
+}
+
+/*
+ * Max-width: 700px
+*/
+@media(max-width: 700px) {
+  .header__badge {
+    font-size: 16px;
+  }
+}
+
+/*
+ * Max-width: 500px
+*/
+@media(max-width: 500px) {
+  .header__inner {
+    padding: 0 25px;
+  }
+}
+
+/*
+ * Max-width: 400px
+*/
+@media(max-width: 400px) {
+  .header__inner {
+    padding: 0 15px;
+  }
+
+  .header__badge {
+    margin: 0 5px;
+    
+    font-size: 13px;
+  }
+
+  .header__svg {
+    margin: 0 10px;
+  }
+}
+
+/*
+ * Max-width: 300px
+*/
+@media(max-width: 300px) {
+  .header__badge {
+    display: none;
+  }
+  
+  .header__svg {
+    margin: 0 5px;
+  }
+}
+

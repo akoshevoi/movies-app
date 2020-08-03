@@ -1,0 +1,63 @@
+.scrollbar-main .ScrollbarsCustom-Wrapper {
+	right: 0 !important;
+}
+
+.scrollbar-main__trackY {
+	width: 20px !important;
+	height: 100% !important;
+	padding: 5px !important;
+
+	background: $blue-bg-track-scrollbar !important;
+
+	top: 0 !important;
+}
+
+.scrollbar-main__thumbY {
+	background: $white !important;
+	border-radius: 7px !important;
+}
+
+.scrollbar-droplist {
+	width: 100% !important; 
+	height: 640px !important; 
+  padding: 0 30px !important;
+  margin-top: 5px;
+  
+	background: $azure;
+	border: 1px solid $blue-light !important;
+	border-radius: 20px;
+}
+
+.scrollbar-droplist .ScrollbarsCustom-Content {
+	padding: 0 30px !important;
+}
+
+.scrollbar-droplist__trackY {
+	border-radius: 5px !important;
+	background-color: $white !important;
+	
+	right: 10px !important;
+}
+
+.scrollbar-droplist__thumbY {
+	background: $blue !important;
+	border-radius: 5px !important;
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 400px
+*/
+@media(max-width: 400px) {
+	.scrollbar-droplist {
+		display: none;
+	}
+
+	.scrollbar-main__trackY {
+    width: 14px !important;
+    padding: 4px !important;
+	}
+}

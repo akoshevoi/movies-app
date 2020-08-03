@@ -1,0 +1,138 @@
+@import './_variables';
+
+@import './components/app';
+@import './components/account.scss';
+@import './components/header';
+@import './components/footer';
+@import './components/form-search';
+@import './components/modal';
+@import './components/tabs';
+@import './components/registration';
+@import './components/result';
+@import './components/scrollbar';
+@import './components/loader';
+@import './components/movie-not-found';
+@import './components/error';
+@import './components/movie-info';
+@import './components/favorite-movie';
+@import './components/sign-in-socials';
+@import './components/password-change';
+@import './components/password-forget';
+@import './components/fading-btn';
+@import './components/error-boundary';
+@import './components/not-found';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font;
+  color: $white;
+  font-size: 14px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 1200px
+*/
+@media(max-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+/*
+ * Max-width: 1100px
+*/
+@media(max-width: 1100px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+/*
+ * Max-width: 1000px
+*/
+@media(max-width: 1000px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+/*
+ * Max-width: 900px
+*/
+@media(max-width: 900px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+/*
+ * Max-width: 700px
+*/
+@media(max-width: 700px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .container--header {
+    width: 600px;
+  }
+}
+
+/*
+ * Max-width: 500px
+*/
+@media(max-width: 500px) {
+  .container--content {
+    max-width: 300px;
+  }
+}
+
+/*
+ * Max-width: 400px
+*/
+@media(max-width: 400px) {
+  .container--header {
+    width: 360px;
+  }
+}
+
+/*
+ * Max-width: 300px
+*/
+@media(max-width: 300px) {
+  .container--content {
+    max-width: 200px;
+  }
+
+  .container--header {
+    width: 280px;
+  }
+}

@@ -1,0 +1,162 @@
+.form-search {
+  text-align: center;
+}
+
+.form-search__title {
+  color: $blue;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form-search__button {
+  padding: 10px 15px;
+
+  font-family: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $blue;
+
+  background-color: $white;
+  border: 2px solid $blue;
+  outline: none;
+  cursor: pointer;
+  
+  transition: background .2s ease-out, color .2s ease-out; 
+
+  &--search {
+    border-left: none;
+    border-right: none;
+  }
+
+  &--reset {
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+.form-search__button:hover {
+  color: $white;
+
+  background-color: $blue;
+}
+
+.form-search__button:focus {
+  background-color: $blue-light;
+}
+
+.form-search__input {
+  width: 600px;
+  padding: 10px 25px;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  border-radius: 20px 0 0 20px;
+  border: 2px solid $blue;
+  outline: none;
+
+  transition: box-shadow .2s ease-out;
+}
+
+.form-search__input:focus {
+  box-shadow: 0 0 20px $blue-light;
+}
+
+.form-search__svg {
+  display: none;
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 900px
+*/
+@media(max-width: 900px) {
+  .form-search__input {
+    width: 500px;
+  }
+}
+
+/*
+ * Max-width: 700px
+*/
+@media(max-width: 700px) {
+  .form-search__title {
+    font-size: 35px;
+  }
+
+  .form-search__input {
+    width: 300px;
+  }
+
+  .form-search__button {
+    padding: 10px;
+
+    font-size: 15px;
+  }
+}
+
+/*
+ * Max-width: 500px
+*/
+@media(max-width: 500px) {
+  .form-search__form {
+    display: flex;
+  }
+
+  .form-search__title {
+    margin: 25px 0;
+
+    font-size: 20px;
+  }
+
+  .form-search__input {
+    width: 200px;
+  }
+
+  .form-search__text {
+    display: none;
+  }
+  
+  .form-search__svg {
+    display: block;
+    width: 25px;
+    
+    fill: $blue;
+  }
+}
+
+/*
+ * Max-width: 300px
+*/
+@media(max-width: 300px) {
+  .form-search__form {
+    flex-wrap: wrap;
+  }
+
+  .form-search__input {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .form-search__button {
+    width: 50%;
+    border-top: none;
+
+    &--reset {
+      border-radius: 0 0 20px 0;
+    }
+
+    &--search {
+      border-left: 2px solid #0d47a1;
+      border-radius: 0 0 0 20px;
+    }
+  }
+
+  .form-search__svg {
+    margin: 0 auto;
+  }
+}

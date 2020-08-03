@@ -1,0 +1,143 @@
+.favourites-movies__inner {
+	display: flex;
+	flex-direction: column;
+}
+
+.favourites-movies__title {
+	color: $blue;
+	font-size: 40px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 5px $blue-middle;
+}
+
+.favourites-movies__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.favourites-movies__message {
+	color: $black;
+	font-size: 30px;
+	text-align: center;
+}
+
+.favorite-movie {
+	width: 250px;
+	margin: 30px;
+
+	background-color: $white;
+  border-radius: 15px;
+	cursor: pointer;
+	box-shadow: 0 0 4px $gray-bg;
+
+	position: relative;
+}
+
+
+.favorite-movie__img {
+	width: 100%;
+
+	border-radius: 15px;
+
+	transition: filter .2s ease-in;
+}
+
+.favorite-movie:hover .favorite-movie__img {
+	filter: blur(3px);
+}
+
+.favorite-movie__content {
+	width: 104%;
+	height: 102%;
+	padding: 0 15px;
+
+	color: $black;
+	text-align: center;
+
+	background-color: $white-bg-transparent;
+	opacity: 0;
+	border-radius: 15px;
+
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	
+	transition: opacity .3s ease-in;
+}
+
+.favorite-movie__title {
+	margin-top: 50%;
+	
+	font-size: 17px;
+}
+
+.favorite-movie__year {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.favorite-movie:hover .favorite-movie__content {
+	opacity: 1;
+}
+
+.favorite-movie__dustbin {
+	width: 60px;
+
+	fill: $black;
+
+  cursor: pointer;
+}
+
+.favorite-movie__dustbin:hover {
+	fill: $blue;
+}
+
+/*
+ * Media
+*/
+
+/*
+ * Max-width: 800px
+*/
+@media(max-width: 800px) {
+	.favourites-movies__title {
+    font-size: 33px;
+	}
+}
+
+/*
+ * Max-width: 600px
+*/
+@media(max-width: 600px) {
+	.favourites-movies__title {
+    font-size: 27px;
+	}
+}
+
+/*
+ * Max-width: 500px
+*/
+@media(max-width: 500px) {
+	.favorite-movie {
+		width: 220px;
+	}
+
+	.favourites-movies__title {
+		letter-spacing: 2px;
+    font-size: 21px;
+	}
+}
+
+/*
+ * Max-width: 400px
+*/
+@media(max-width: 400px) {
+	.favourites-movies__title {
+		letter-spacing: 1px;
+		font-size: 18px;
+	}
+}
+

@@ -1,0 +1,19 @@
+.fading-btn-enter {
+  opacity: 0;
+}
+
+.fading-btn-enter-active {
+  opacity: 1;
+
+  transition: opacity 500ms ease-out;
+}
+
+.fading-btn-exit {
+  opacity: 1;
+}
+
+.fading-btn-exit-active {
+  opacity: 0;
+  
+  transition: opacity 500ms ease-out;
+}
