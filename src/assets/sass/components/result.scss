@@ -40,10 +40,6 @@
   font-size: 18px;
 }
 
-.result__list--adaptive {
-  display: none;
-}
-
 /*
  * Media
 */
@@ -116,14 +112,3 @@
     font-size: 14px;
   }
 }
-
-/*
- * Max-width: 300px
-*/
-@media(max-width: 300px) {
-  .result__list--adaptive {
-    display: block;
-  }
-}
-
-
