@@ -57,7 +57,7 @@
 	z-index: 10;
 }
 
-.cssload-preloader > span {
+.cssload-preloader__letter {
 	font-size: 49px;
 	animation: 5.75s ease-in-out infinite;
 		-o-animation: 5.75s ease-in-out infinite;
@@ -68,7 +68,7 @@
 	text-shadow: 0 0 0px $blue;
 }
 
-span:nth-child(-n+3) {
+.cssload-preloader__letter:nth-child(-n+3) {
 	animation-delay: -2.88s;
 		-o-animation-delay: -2.88s;
 		-ms-animation-delay: -2.88s;
@@ -76,8 +76,8 @@ span:nth-child(-n+3) {
 		-moz-animation-delay: -2.88s;
 }
 
-span:nth-child(1),
-span:nth-last-child(1) {
+.cssload-preloader__letter:nth-child(1),
+.cssload-preloader__letter:nth-last-child(1) {
 	animation-name: blur-1;
 		-o-animation-name: blur-1;
 		-ms-animation-name: blur-1;
@@ -85,8 +85,8 @@ span:nth-last-child(1) {
 		-moz-animation-name: blur-1;
 }
 
-span:nth-child(2),
-span:nth-last-child(2) {
+.cssload-preloader__letter:nth-child(2),
+.cssload-preloader__letter:nth-last-child(2) {
 	animation-name: blur-2;
 		-o-animation-name: blur-2;
 		-ms-animation-name: blur-2;
@@ -94,8 +94,8 @@ span:nth-last-child(2) {
 		-moz-animation-name: blur-2;
 }
 
-span:nth-child(3),
-span:nth-last-child(3) {
+.cssload-preloader__letter:nth-child(3),
+.cssload-preloader__letter:nth-last-child(3) {
 	animation-name: blur-3;
 		-o-animation-name: blur-3;
 		-ms-animation-name: blur-3;
@@ -235,5 +235,28 @@ span:nth-last-child(3) {
 	}
 	50% {
 		-moz-transform: rotateY(45deg);
+	}
+}
+
+//*** Media ***//
+
+//*** Max-width: 500px ***//
+@media(max-width: 500px) {
+	.cssload-preloader__letter {
+		font-size: 35px;
+	}
+}
+
+//*** Max-width: 400px ***//
+@media(max-width: 400px) {
+	.cssload-preloader__letter {
+		font-size: 28px;
+	}
+}
+
+//*** Max-width: 360px ***//
+@media(max-width: 360px) {
+	.cssload-preloader__letter {
+		font-size: 23px;
 	}
 }

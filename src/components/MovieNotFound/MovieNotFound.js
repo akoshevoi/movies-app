@@ -3,21 +3,21 @@ import React from 'react';
 
 const MovieNotFound = () => (
   <div className='cssload-preloader'>
-    <span>M</span>
-    <span>o</span>
-    <span>v</span>
-    <span>i</span>
-    <span>e</span>
-    <span>_</span>
-    <span>N</span>
-    <span>o</span>
-    <span>t</span>
-    <span>_</span>
-    <span>F</span>
-    <span>o</span>
-    <span>u</span>
-    <span>n</span>
-    <span>d</span>
+    <span className='cssload-preloader__letter'>M</span>
+    <span className='cssload-preloader__letter'>o</span>
+    <span className='cssload-preloader__letter'>v</span>
+    <span className='cssload-preloader__letter'>i</span>
+    <span className='cssload-preloader__letter'>e</span>
+    <span className='cssload-preloader__letter'>_</span>
+    <span className='cssload-preloader__letter'>N</span>
+    <span className='cssload-preloader__letter'>o</span>
+    <span className='cssload-preloader__letter'>t</span>
+    <span className='cssload-preloader__letter'>_</span>
+    <span className='cssload-preloader__letter'>F</span>
+    <span className='cssload-preloader__letter'>o</span>
+    <span className='cssload-preloader__letter'>u</span>
+    <span className='cssload-preloader__letter'>n</span>
+    <span className='cssload-preloader__letter'>d</span>
   </div>
 );
 

@@ -245,3 +245,33 @@
 		color: $white;
 	}
 }
+
+//*** Media ***//
+
+//*** Max-width: 700px ***//
+@media(max-width: 700px) {
+	.inTurnFadingTextG {
+		font-size: 35px;
+	}
+}
+
+//*** Max-width: 500px ***//
+@media(max-width: 500px) {
+	.inTurnFadingTextG {
+		font-size: 28px;
+	}
+}
+
+//*** Max-width: 400px ***//
+@media(max-width: 400px) {
+	.inTurnFadingTextG {
+		font-size: 20px;
+	}
+}
+
+//*** Max-width: 360px ***//
+@media(max-width: 360px) {
+	.inTurnFadingTextG {
+		font-size: 16px;
+	}
+}

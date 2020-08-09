@@ -27,7 +27,7 @@ const StorageFavouritesMovies = ({ authUser, firebase }) => {
   if (favouritesMoviesArray) {
     return (
       <div className='favourites-movies'>
-        <div className='container  container--content'>
+        <div className='container'>
           <div className='favourites-movies__inner'>
             <StyleRoot>
               <h2 className='favourites-movies__title' style={styles.bounceIn}>
@@ -48,7 +48,7 @@ const StorageFavouritesMovies = ({ authUser, firebase }) => {
 
   return (
     <div className='favourites-movies'>
-      <div className='container  container--content'>
+      <div className='container'>
         <div className='favourites-movies__inner'>
           <StyleRoot>
             <p className='favourites-movies__message' style={styles.bounceIn}>

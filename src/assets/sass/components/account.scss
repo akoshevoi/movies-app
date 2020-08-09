@@ -34,13 +34,9 @@
   margin: 10px;
 }
 
-/*
- * Media
-*/
+//*** Media ***//
 
-/*
- * Max-width: 1000px
-*/
+//*** Max-width: 1000px ***//
 @media(max-width: 1000px) {
   .account {
     flex-wrap: wrap;
@@ -55,9 +51,7 @@
   }
 }
 
-/*
- * Max-width: 600px
-*/
+//*** Max-width: 600px ***//
 @media(max-width: 600px) {
   .account {
     margin-top: 0;
@@ -72,9 +66,7 @@
   }
 }
 
-/*
- * Max-width: 500px
-*/
+//*** Max-width: 500px ***//
 @media(max-width: 500px) {
   .account__info {
     margin: 10px 15px;
@@ -82,9 +74,7 @@
   }
 }
 
-/*
- * Max-width: 400px
-*/
+//*** Max-width: 400px ***//
 @media(max-width: 400px) {
   .account__definition,
   .account__meaning {

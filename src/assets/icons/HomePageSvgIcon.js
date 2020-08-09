@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomePageSvgIcon = () => (
   <svg
-    className='header__svg header__svg--homepage'
+    className='navbar__svg navbar__svg--homepage'
     id='Capa_1'
     enableBackground='new 0 0 512 512'
     viewBox='0 0 512 512'

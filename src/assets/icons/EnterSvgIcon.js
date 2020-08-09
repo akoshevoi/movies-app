@@ -2,7 +2,7 @@ import React from 'react';
 
 const EnterSvgIcon = () => (
   <svg
-    className='header__svg  header__svg--enter'
+    className='navbar__svg  navbar__svg--enter'
     id='Capa_1'
     enableBackground='new 0 0 512 512'
     viewBox='0 0 512 512'

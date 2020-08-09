@@ -106,3 +106,33 @@
     text-shadow: $red 0 0 0;
 	}
 }
+
+//*** Media ***//
+
+//*** Max-width: 700px ***//
+@media(max-width: 700px) {
+	.blurringTextG {
+		font-size: 38px;
+	}
+}
+
+//*** Max-width: 500px ***//
+@media(max-width: 500px) {
+	.blurringTextG {
+		font-size: 30px;
+	}
+}
+
+//*** Max-width: 400px ***//
+@media(max-width: 400px) {
+	.blurringTextG {
+		font-size: 23px;
+	}
+}
+
+//*** Max-width: 360px ***//
+@media(max-width: 360px) {
+	.blurringTextG {
+		font-size: 18px;
+	}
+}

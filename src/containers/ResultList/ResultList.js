@@ -15,7 +15,7 @@ const styles = {
 const ResultList = ({ movies }) => (
   <StyleRoot>
     <div className='results'>
-      <div className='container  container--content' style={styles.bounceInUp}>
+      <div className='container' style={styles.bounceInUp}>
         {movies.map(item => (
           <Result key={item.id} item={item} />
         ))}

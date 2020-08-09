@@ -44,14 +44,10 @@
 	border-radius: 5px !important;
 }
 
-/*
- * Media
-*/
+//*** Media ***//
 
-/*
- * Max-width: 400px
-*/
-@media(max-width: 400px) {
+//*** Max-width: 440px ***//
+@media(max-width: 440px) {
 	.scrollbar-droplist {
 		display: none;
 	}

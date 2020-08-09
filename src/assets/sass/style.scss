@@ -21,6 +21,8 @@
 @import './components/fading-btn';
 @import './components/error-boundary';
 @import './components/not-found';
+@import './components/bottom-navbar';
+@import './components/navbar';
 
 html,
 body,
@@ -53,86 +55,117 @@ body {
   margin: 0 auto;
 }
 
-/*
- * Media
-*/
+//*** Media ***//
 
-/*
- * Max-width: 1200px
-*/
+//*** Max-width: 1200px ***//
 @media(max-width: 1200px) {
   .container {
+    max-width: 1100px;
+  }
+
+  .container--content {
     max-width: 1000px;
   }
 }
 
-/*
- * Max-width: 1100px
-*/
+//*** Max-width: 1100px ***//
 @media(max-width: 1100px) {
   .container {
+    max-width: 1000px;
+  }
+
+  .container--content {
     max-width: 900px;
   }
 }
 
-/*
- * Max-width: 1000px
-*/
+//*** Max-width: 1000px ***//
 @media(max-width: 1000px) {
   .container {
+    max-width: 900px;
+  }
+
+  .container--content {
     max-width: 800px;
   }
 }
 
-/*
- * Max-width: 900px
-*/
+//*** Max-width: 900px ***//
 @media(max-width: 900px) {
   .container {
+    max-width: 800px;
+  }
+
+  .container--content {
     max-width: 700px;
   }
 }
 
-/*
- * Max-width: 700px
-*/
+//*** Max-width: 800px ***//
+@media(max-width: 800px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .container--content {
+    max-width: 600px;
+  }
+}
+
+//*** Max-width: 700px ***//
 @media(max-width: 700px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .container--content {
+    max-width: 500px;
+  }
+}
+
+//*** Max-width: 600px ***//
+@media(max-width: 600px) {
   .container {
     max-width: 500px;
   }
 
-  .container--header {
-    width: 600px;
+  .container--content {
+    max-width: 400px;
   }
 }
 
-/*
- * Max-width: 500px
-*/
+//*** Max-width: 500px ***//
 @media(max-width: 500px) {
+  .container {
+    max-width: 420px;
+  }
+
+  .container--content {
+    max-width: 380px;
+  }
+}
+
+//*** Max-width: 440px ***//
+@media(max-width: 440px) {
   .container--content {
     max-width: 300px;
   }
 }
 
-/*
- * Max-width: 400px
-*/
+//*** Max-width: 400px ***//
 @media(max-width: 400px) {
-  .container--header {
-    width: 360px;
+  .container {
+    max-width: 340px;
+  }
+
+  .container--content {
+    max-width: 280px;
   }
 }
 
-/*
- * Max-width: 300px
-*/
-@media(max-width: 300px) {
+//*** Max-width: 360px ***//
+@media(max-width: 360px) {
   .container--content {
-    max-width: 200px;
-  }
-
-  .container--header {
-    width: 280px;
+    max-width: 240px;
   }
 }

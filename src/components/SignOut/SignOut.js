@@ -26,9 +26,13 @@ const SignOut = ({
   };
 
   return (
-    <div className='header__exit' onClick={doSignOut} title='Log out'>
-      {authUser && <ExitSvgIcon />}
-    </div>
+    <>
+      {authUser && (
+        <div className='navbar__exit' onClick={doSignOut} title='Log out'>
+          <ExitSvgIcon />
+        </div>
+      )}
+    </>
   );
 };
 

@@ -182,3 +182,22 @@
 		opacity: 0;
 	}
 }
+
+//*** Media ***//
+
+
+//*** Max-width: 500px ***//
+@media(max-width: 500px) {
+	.cssload-thecube {
+		width: 53px;
+		height: 53px;
+	}
+}
+
+//*** Max-width: 400px ***//
+@media(max-width: 400px) {
+	.cssload-thecube {
+		width: 43px;
+		height: 43px;
+	}
+}

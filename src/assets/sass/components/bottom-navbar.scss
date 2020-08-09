@@ -1,0 +1,15 @@
+.bottom-navbar {
+  display: none;
+
+  background-color: $blue-light;
+}
+
+//*** Media ***//
+
+//*** Max-width: 600px ***//
+@media(max-width: 600px) {
+  .bottom-navbar {
+    display: block;
+    margin-top: auto;
+  }
+}

@@ -4,13 +4,14 @@
   background-color: $white;
 }
 
-/*
- * Media
-*/
+.tabs__svg {
+  width: 40px;
+  height: 60px;
+}
 
-/*
- * Max-width: 600px
-*/
+//*** Media ***//
+
+//*** Max-width: 600px ***//
 @media(max-width: 600px) {
   .tabs {
     width: 400px;
@@ -21,29 +22,38 @@
   }
 
   .tabs .MuiTab-wrapper {
-    font-size: 10px;
+    font-size: 0;
   }
 }
 
-/*
- * Max-width: 500px
-*/
+//*** Max-width: 500px ***//
 @media(max-width: 500px) {
-  .tabs {
-    width: 300px;
-  }
-
   .tabs .MuiTab-root {
     min-width: 100px;
   }
+
+  .tabs__svg {
+    width: 35px;
+    height: 50px;
+  }
 }
 
-/*
- * Max-width: 300px
-*/
-@media(max-width: 300px) {
+//*** Max-width: 450px ***//
+@media(max-width: 450px) {
+  .tabs {
+    width: 300px;
+  }
+}
+
+//*** Max-width: 350px ***//
+@media(max-width: 350px) {
   .tabs {
     width: 250px;
+  }
+
+  .tabs__svg {
+    width: 30px;
+    height: 40px;
   }
 
   .tabs .MuiTab-root {

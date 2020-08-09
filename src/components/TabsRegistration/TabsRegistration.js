@@ -8,6 +8,10 @@ import Tab from '@material-ui/core/Tab';
 import { useTheme } from '@material-ui/core/styles';
 import PasswordForget from '../PasswordForget/PasswordForget';
 
+import SignUpSvgIcon from '../../assets/icons/SignUpSvgIcon';
+import SignInSvgIcon from '../../assets/icons/SignInSvgIcon';
+import PasswordForgetSvgIcon from '../../assets/icons/PasswordForgetSvgIcon';
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -58,9 +62,13 @@ const TabsRegistration = ({ onCloseModal }: Props) => {
           variant='fullWidth'
           aria-label='full width tabs example'
         >
-          <Tab label='Sign In' {...a11yProps(0)} />
-          <Tab label='Sign Up' {...a11yProps(1)} />
-          <Tab label='Password Forget' {...a11yProps(2)} />
+          <Tab label='Sign In' icon={<SignInSvgIcon />} {...a11yProps(0)} />
+          <Tab label='Sign Up' icon={<SignUpSvgIcon />} {...a11yProps(1)} />
+          <Tab
+            label='Password Forget'
+            icon={<PasswordForgetSvgIcon />}
+            {...a11yProps(2)}
+          />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0} dir={theme.direction}>

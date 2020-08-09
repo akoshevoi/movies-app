@@ -6,24 +6,26 @@ import ErrorBoundary from '../../components/ErrorBoundary/ErrorBoundary';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import MainContent from '../MainContent/MainContent';
+import BottomNavBar from '../../components/BottomNavBar/BottomNavBar';
 
 import { withAuthentication } from '../../components/Session';
 
 const App = () => (
   <ErrorBoundary>
-    <Scrollbar
-      trackYProps={{ className: 'scrollbar-main__trackY' }}
-      thumbYProps={{ className: 'scrollbar-main__thumbY' }}
-      className='scrollbar-main'
-    >
-      <Router>
-        <div className='app'>
-          <Header />
+    <Router>
+      <div className='app'>
+        <Header />
+        <Scrollbar
+          trackYProps={{ className: 'scrollbar-main__trackY' }}
+          thumbYProps={{ className: 'scrollbar-main__thumbY' }}
+          className='scrollbar-main'
+        >
           <MainContent />
-          <Footer />
-        </div>
-      </Router>
-    </Scrollbar>
+        </Scrollbar>
+        <BottomNavBar />
+        <Footer />
+      </div>
+    </Router>
   </ErrorBoundary>
 );
 

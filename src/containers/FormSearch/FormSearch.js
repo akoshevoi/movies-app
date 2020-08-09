@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import {
   fetchBriefDataMovies,
   sendingRequest,
-  typingInSearchMovieInput
+  typingInSearchMovieInput,
+  getMoviesArrayForResultList
 } from '../../actions/actions';
 import * as API from '../../constants/api';
 import SearchSvgIcon from '../../assets/icons/SearchSvgIcon';
@@ -14,7 +15,8 @@ const FormSearch = ({
   getInfoAboutClickedSearchButton,
   fetchBriefDataMovies,
   valueOfSearchInput,
-  handleValueInput
+  handleValueInput,
+  handleMoviesArrayForResultList
 }) => {
   const handleSubmit = event => {
     event.preventDefault();
@@ -36,6 +38,7 @@ const FormSearch = ({
   const resetInput = event => {
     event.preventDefault();
     handleValueInput('');
+    handleMoviesArrayForResultList([]);
   };
 
   const getInfoAboutSendingRequest = () => {
@@ -44,7 +47,7 @@ const FormSearch = ({
 
   return (
     <div className='form-search'>
-      <div className='container  container--content'>
+      <div className='container container--content'>
         <h1 className='form-search__title'>Let's find some movie</h1>
         <form className='form-search__form' onSubmit={handleSubmit}>
           <input
@@ -81,7 +84,9 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   getInfoAboutClickedSearchButton: click => dispatch(sendingRequest(click)),
   fetchBriefDataMovies: url => dispatch(fetchBriefDataMovies(url)),
-  handleValueInput: value => dispatch(typingInSearchMovieInput(value))
+  handleValueInput: value => dispatch(typingInSearchMovieInput(value)),
+  handleMoviesArrayForResultList: array =>
+    dispatch(getMoviesArrayForResultList(array))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(FormSearch);

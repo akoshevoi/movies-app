@@ -77,7 +77,7 @@ const PreviewInfoMovie = ({
         }}
       >
         <div className='movie-info__background'>
-          <div className='container  container--content'>
+          <div className='container container--content'>
             <div className='movie-info__inner  movie-info__inner--preview'>
               <div className='movie-info__poster  movie-info__poster--preview'>
                 <img

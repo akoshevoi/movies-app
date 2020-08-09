@@ -29,36 +29,30 @@
   transform: translateY(-50%) translateX(-50%);
 }
 
-/*
- * Media
-*/
+//*** Media ***//
 
-/*
- * Max-width: 600px
-*/
+
+//*** Max-width: 600px ***//
 @media(max-width: 600px) {
   .modal__content {
     width: 400px;
   }
 }
 
-/*
- * Max-width: 500px
-*/
-@media(max-width: 500px) {
+//*** Max-width: 450px ***//
+@media(max-width: 450px) {
   .modal__content {
     width: 300px;
   }
 }
 
-/*
- * Max-width: 300px
-*/
-@media(max-width: 300px) {
+//*** Max-width: 350px ***//
+@media(max-width: 350px) {
   .modal__content {
     width: 250px;
   }
 }
+
 
 
 

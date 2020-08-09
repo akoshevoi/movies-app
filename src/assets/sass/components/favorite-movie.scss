@@ -30,8 +30,8 @@
 
 	background-color: $white;
   border-radius: 15px;
-	cursor: pointer;
 	box-shadow: 0 0 4px $gray-bg;
+	cursor: pointer;
 
 	position: relative;
 }
@@ -95,31 +95,24 @@
 	fill: $blue;
 }
 
-/*
- * Media
-*/
+//*** Media ***//
 
-/*
- * Max-width: 800px
-*/
+
+//*** Max-width: 800px ***//
 @media(max-width: 800px) {
 	.favourites-movies__title {
     font-size: 33px;
 	}
 }
 
-/*
- * Max-width: 600px
-*/
+//*** Max-width: 600px ***//
 @media(max-width: 600px) {
 	.favourites-movies__title {
     font-size: 27px;
 	}
 }
 
-/*
- * Max-width: 500px
-*/
+//*** Max-width: 500px ***//
 @media(max-width: 500px) {
 	.favorite-movie {
 		width: 220px;
@@ -131,9 +124,7 @@
 	}
 }
 
-/*
- * Max-width: 400px
-*/
+//*** Max-width: 400px ***//
 @media(max-width: 400px) {
 	.favourites-movies__title {
 		letter-spacing: 1px;
