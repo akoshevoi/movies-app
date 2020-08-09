@@ -227,6 +227,8 @@
 //*** Max-width: 800px ***//
 @media(max-width: 800px) {
 	.movie-info--preview {
+		margin: 20px auto;
+		
 		background-image: none !important;
 		box-shadow: none;
 	}
