@@ -258,6 +258,14 @@
 	}
 }
 
+//*** Max-width: 470px ***//
+@media(max-width: 470px) {
+	.movie-info__runtime {
+		display: block;
+		margin: 10px 0;
+	}
+}
+
 //*** Max-width: 360px ***//
 @media(max-width: 360px) {
 	.movie-info__img--preview, 
@@ -275,11 +283,6 @@
 
 	.movie-info__overview {
     font-size: 14px;
-	}
-
-	.movie-info__runtime {
-		display: block;
-		margin: 10px 0;
 	}
 
 	.movie-info__meaning {
