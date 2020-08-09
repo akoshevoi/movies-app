@@ -159,6 +159,10 @@
 
 //*** Max-width: 1200px ***//
 @media(max-width: 1200px) {
+	.movie-info__inner--explicit {
+		padding: 50px 0;
+	}
+
 	.movie-info__overview--explicit {
 		font-size: 18px;
 	}
@@ -246,6 +250,10 @@
 
 //*** Max-width: 500px ***//
 @media(max-width: 500px) {
+	.movie-info__inner--explicit {
+		padding: 30px 0;
+	}
+
 	.movie-info__img--explicit {
 		width: 300px;
 	}
@@ -262,6 +270,10 @@
 
 //*** Max-width: 470px ***//
 @media(max-width: 470px) {
+	.movie-info__img--preview {
+		width: 256px;
+	}
+	
 	.movie-info__runtime {
 		display: block;
 		margin: 10px 0;
